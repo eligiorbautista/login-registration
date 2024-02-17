@@ -70,17 +70,31 @@
             margin: 0 auto;
         }
 
+        main .card form {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            width: 30vw;
+            margin: 0 auto;
+        }
+
+        @media (max-width: 768px) {
+            main .card {
+                width: 80vw;
+            }
+
+            main .card form {
+                width: 70vw;
+            }
+        }
+
         main .card h1 {
             text-align: center;
             color: #fff;
             margin-bottom: 20px;
         }
 
-        main .card form {
-            display: flex;
-            flex-direction: column;
-            gap: 12px;
-        }
+
 
         main .card label {
             color: #ebebeb;
