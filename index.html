@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App name - home</title>
+    <style>
+        /* Global CSS */
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+        * {
+            font-family: 'Roboto', sans-serif;
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+
+        /* Nav Bar */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #2e2e2e;
+        }
+
+        header nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+        }
+
+        header nav .logo a {
+            color: #ebebeb;
+            text-decoration: none;
+            font-size: 1.3rem;
+            font-weight: 600;
+        }
+
+        header nav ul li {
+            display: inline-block;
+            margin-right: 20px;
+        }
+
+        header nav ul li a {
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            text-decoration: none;
+            color: #ebebeb;
+        }
+
+        /* Main */
+        main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: calc(100vh - 60px);
+            background-color: #696969;
+        }
+
+        main .card {
+            background-color: #2e2e2e;
+            padding: 5vw;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4), 0px 7px 13px -3px rgba(0, 0, 0, 0.3), inset 0px -3px 0px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            margin: 10vw;
+        }
+
+        main .card h1 {
+            text-align: center;
+            color: #fff;
+            margin-bottom: 10px;
+        }
+
+        main .card p {
+            text-align: center;
+            color: #fff;
+
+        }
+
+        /* Footer */
+        footer {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: #2e2e2e;
+            line-height: 60px;
+            text-align: center;
+        }
+
+        footer p {
+            color: #ebebeb;
+            font-size: 0.9rem;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <nav>
+
+            <div class="logo"><a href="index.html">APP NAME</a></div>
+
+
+            <ul>
+                <li><a href="./src/assets/pages/login.html">Log In</a></li>
+                <li> <a href="">|</a> </li>
+                <li><a href="./src/assets/pages/registration-en.html">Register</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="card">
+            <h1>Welcome to App name</h1>
+
+            <p>This is a practice project created by Eli Bautista to practice user authentication and management
+                functionalities, including user registration, login, and updating user information.</p>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Eli Bautista. All Rights Reserved.</p>
+    </footer>
+</body>
+
+</html>
